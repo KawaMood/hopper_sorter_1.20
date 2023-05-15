@@ -1,0 +1,20 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+                "location": [
+                    {
+                        "condition": "minecraft:match_tool",
+                        "predicate": {
+                            "nbt": "{pkCustomBlockPlacer:1b,pkHopperSorter:1b}"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "pk_hopper_sorter:blocks/hopper_sorter/actions/player_placed_hopper_sorter_placer/trigger"
+    }
+}

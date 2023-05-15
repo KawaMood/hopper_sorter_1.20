@@ -1,0 +1,11 @@
+{
+    "values": [
+        "#pk_hopper_sorter:shulker_boxes",
+        "minecraft:chest",
+        "minecraft:trapped_chest",
+        "minecraft:hopper",
+        "minecraft:dispenser",
+        "minecraft:dropper",
+        "minecraft:barrel"
+    ]
+}
