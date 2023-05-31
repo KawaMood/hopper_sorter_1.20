@@ -1,4 +1,4 @@
-#> pk_hopper_sorter:base/uninstall/helpers/remove_common_features
+#> pk_hopper_sorter:base/uninstall/remove_common_features
 # Remove all features common to each KawaMood data packs
 # /!\ Do not run this function manually!
 

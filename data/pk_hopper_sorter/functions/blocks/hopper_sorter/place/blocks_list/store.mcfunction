@@ -1,5 +1,5 @@
 #> pk_hopper_sorter:blocks/hopper_sorter/place/blocks_list/store
-# Store the HopperSorter info from the controller
+# Store the HopperSorter info
 
 # Clear storage
 data remove storage pk.common:data Temp.HopperSorter
@@ -14,8 +14,8 @@ execute store result storage pk.common:data Temp.HopperSorter.id int 1 run score
 execute store result storage pk.common:data Temp.HopperSorter.Facing byte 1 run scoreboard players get $facing pk.temp
 
 # Set owner data
-data modify storage pk.common:data Temp.HopperSorter.Owner.UUID set from entity @a[tag=pk.temp.current.player,distance=..10,limit=1] UUID
-execute store result storage pk.common:data Temp.HopperSorter.Owner.id int 1 run scoreboard players get @a[tag=pk.temp.current.player,distance=..10,limit=1] pk.player.id
+data modify storage pk.common:data Temp.HopperSorter.Owner.UUID set from entity @s UUID
+execute store result storage pk.common:data Temp.HopperSorter.Owner.id int 1 run scoreboard players get @s pk.player.id
 
 # Set coordinates
 data modify storage pk.common:data Temp.HopperSorter.x set from storage pk.common:data Temp.Block.x

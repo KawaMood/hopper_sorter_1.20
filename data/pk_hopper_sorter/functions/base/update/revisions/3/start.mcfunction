@@ -10,4 +10,4 @@ execute as @e[type=marker,tag=pk.dimension.marker] at @s run function pk_hopper_
 scoreboard objectives remove pk.dimension.id
 
 # Forceload the chunk in overworld
-execute in minecraft:overworld run forceload add -30000000 -1600
+execute in minecraft:overworld run forceload add -30000000 1600

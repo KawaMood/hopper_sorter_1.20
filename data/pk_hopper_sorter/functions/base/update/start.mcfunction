@@ -2,8 +2,6 @@
 # Update the current data pack if needed
 
 # Update depending on the current version 
-# - Changes from V.2.0.1
-execute unless score $pk.ho_so.version pk.value matches 1.. run function pk_hopper_sorter:base/update/revisions/2
 # - Changes from V.2.1.0
 execute if score $pk.ho_so.version pk.value matches ..2 run function pk_hopper_sorter:base/update/revisions/3/start
 
