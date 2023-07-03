@@ -68,7 +68,7 @@ function pk_hopper_sorter:packages/air_toggling/load
 # ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― 
 # Updates:
 # ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
-execute unless score $pk.ho_so.version pk.value matches 3 run function pk_hopper_sorter:base/update/start
+execute unless score $pk.ho_so.version pk.value matches 4 run function pk_hopper_sorter:base/update/start
 
 # ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― 
 # Logs:
