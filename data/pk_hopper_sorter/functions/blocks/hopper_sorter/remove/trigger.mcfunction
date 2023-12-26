@@ -10,6 +10,9 @@ execute align xyz positioned ~ ~-0.3 ~ as @e[type=item,tag=pk.ho_so.passed,dx=0]
 # Drop item
 execute unless score $uninstall pk.temp matches 1 run function pk_hopper_sorter:blocks/hopper_sorter/helpers/drop/trigger
 
+# Remove drop
+kill @e[type=item,nbt={Age:0s,Item:{Count:1b,id:"minecraft:chiseled_deepslate"}},limit=1,distance=..2]
+
 # Remove block
 execute if block ~ ~ ~ chiseled_deepslate run setblock ~ ~ ~ air
 
